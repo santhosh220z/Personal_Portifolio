@@ -40,9 +40,8 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-xl">
-            Computer Science student passionate about Artificial Intelligence, Machine Learning, and Computer Vision. 
-            Experienced in building deep learning models and AI-powered applications including gesture recognition, 
-            deepfake detection, and predictive analytics systems.
+            B.Tech student specializing in Computer Science Engineering (AI & ML) at Kakinada Institute of Engineering and Technology. 
+            Python enthusiast at an intermediate level with a strong interest in Machine Learning, Generative AI, and building real-world AI applications.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
