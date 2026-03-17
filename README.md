@@ -1,16 +1,62 @@
-# React + Vite
+# Santhosh Sunkara | AI & ML Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This project showcases my journey as a B.Tech student specializing in Computer Science Engineering (Artificial Intelligence and Machine Learning) at the Kakinada Institute of Engineering and Technology.
 
-Currently, two official plugins are available:
+## 🚀 About Me
+I am a Python enthusiast at an intermediate level with a strong interest in Machine Learning, Generative AI, and computer vision. My goal is to bridge the gap between theoretical AI concepts and real-world practical applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Key Highlights:
+- **Google AI-ML Virtual Internship (2024-2025)**: Focused on advanced AI/ML algorithms and real-world applications.
+- **Edunet Foundation Intern (2024-2025)**: Developed a real-time hand sign recognition system.
+- **Project: Sign-Speak**: Developed a gesture-to-speech system for sign language interpretation (Selected for Regional Round at Edunet).
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend**: React, Vite, Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide-React
+- **Languages**: Python, JavaScript
+- **AI/ML**: OpenCV, MediaPipe, ML Algorithms (Naive Bayes, Logistic Regression), Generative AI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- **Modern Design**: A premium, responsive interface with a custom dark-forest-and-gold color scheme.
+- **Micro-animations**: Smooth hover effects and entry transitions powered by Framer Motion.
+- **Dynamic Projects Section**: Showcasing key work in NLP, Computer Vision, and Chatbots.
+- **Integrated Experience Timeline**: Highlighting internships and professional growth.
 
-## Expanding the ESLint configuration
+## 📦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/santhosh220z/Personal_Portifolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Personal_Portifolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+To start the development server:
+```bash
+npm run dev
+```
+
+### Building for Production
+To create a production-ready build:
+```bash
+npm run build
+```
+
+## 📄 License
+This project is for personal use. Feel free to use it as inspiration for your own portfolio!
+
+---
+Developed with ❤️ by [Santhosh Sunkara](https://github.com/santhosh220z)
