@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,9 +32,6 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800/60 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>© {currentYear} Santhosh Sunkara. All rights reserved.</p>
-          <p className="flex items-center gap-1">
-            Built with <Heart size={14} className="text-red-500" /> and React
-          </p>
         </div>
       </div>
     </footer>
