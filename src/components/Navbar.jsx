@@ -60,10 +60,10 @@ const Navbar = () => {
           </ul>
           
           <div className="flex items-center gap-4 pl-6 border-l border-gray-800">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/santhosh220z" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/siva-sambhavi-santhosh-sunkara-588a24265/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
           </div>
@@ -99,13 +99,13 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="flex items-center gap-4 pt-4 border-t border-gray-800">
-                <a href="https://github.com" className="text-gray-400 hover:text-white">
+                <a href="https://github.com/santhosh220z" className="text-gray-400 hover:text-white">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" className="text-gray-400 hover:text-white">
+                <a href="https://www.linkedin.com/in/siva-sambhavi-santhosh-sunkara-588a24265/" className="text-gray-400 hover:text-white">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:contact@example.com" className="text-gray-400 hover:text-white">
+                <a href="mailto:santhoshsunkarasbe@gmail.com" className="text-gray-400 hover:text-white">
                   <Mail size={20} />
                 </a>
               </div>

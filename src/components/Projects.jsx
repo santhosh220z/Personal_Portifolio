@@ -9,28 +9,28 @@ const Projects = () => {
       title: "Deepfake Detection Model",
       description: "Deep learning model to detect manipulated videos and images using CNN architecture and image preprocessing techniques.",
       technologies: ["Python", "TensorFlow", "OpenCV"],
-      github: "https://github.com",
+      github: "https://github.com/santhosh220z/Deepfake-Detection",
       color: "from-purple-500 to-indigo-500"
     },
     {
       title: "Hand Gesture Recognition",
       description: "Real-time gesture recognition system using MediaPipe and TensorFlow to classify hand gestures from live camera input.",
       technologies: ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
-      github: "https://github.com",
+      github: "https://github.com/santhosh220z",
       color: "from-blue-500 to-cyan-500"
     },
     {
       title: "AI Chatbot using DeepSeek-R1",
       description: "AI chatbot using the DeepSeek-R1 model from Hugging Face with conversation history and web interface.",
       technologies: ["Python", "Hugging Face", "HTML", "CSS"],
-      github: "https://github.com",
+      github: "https://github.com/santhosh220z",
       color: "from-emerald-500 to-teal-500"
     },
     {
       title: "Stroke Prediction System",
       description: "Machine learning model predicting stroke risk based on medical dataset features using classification algorithms.",
       technologies: ["Python", "Scikit-learn"],
-      github: "https://github.com",
+      github: "https://github.com/santhosh220z",
       color: "from-rose-500 to-pink-500"
     }
   ];
@@ -96,7 +96,7 @@ const Projects = () => {
         
         <div className="text-center mt-12">
           <a
-            href="https://github.com"
+            href="https://github.com/santhosh220z"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gray-900 border border-gray-800 text-white font-medium hover:bg-gray-800 transition-colors"
