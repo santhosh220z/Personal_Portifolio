@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Award, Calendar } from 'lucide-react';
+import { ExternalLink, Calendar } from 'lucide-react';
 import SectionHeading from './SectionHeading';
+import GoogleCloudLogo from '../../IMAGE/google-cloud.png';
 
 const certificationsData = [
   {
@@ -134,8 +135,8 @@ const Certifications = () => {
               className="group relative flex flex-col bg-chlorophyll-surface-low border border-chlorophyll-outline-variant/30 rounded-2xl p-6 hover:border-chlorophyll-primary/50 transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgb(175,209,136,0.12)]"
             >
               {/* Badge Icon Area */}
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-chlorophyll-surface-high to-chlorophyll-surface-highest flex items-center justify-center mb-6 border border-chlorophyll-outline-variant/50 group-hover:scale-105 transition-transform duration-300">
-                <Award className="text-chlorophyll-primary" size={32} />
+              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-chlorophyll-surface-high to-chlorophyll-surface-highest flex items-center justify-center mb-6 border border-chlorophyll-outline-variant/50 group-hover:scale-105 transition-transform duration-300 overflow-hidden p-2">
+                <img src={GoogleCloudLogo} alt="Google Cloud" className="w-full h-full object-contain" />
               </div>
 
               {/* Content */}
