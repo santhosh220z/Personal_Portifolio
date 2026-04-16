@@ -22,11 +22,13 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 relative relative z-10 w-full flex flex-col items-center">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full flex flex-col items-center">
+    <section id="experience" className="relative z-10 flex w-full flex-col items-center py-24">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 md:px-12">
         <SectionHeading title="Experience" subtitle="Professional Journey" />
-        
-        <div className="w-full max-w-3xl flex flex-col gap-8">
+
+        <div className="relative flex w-full max-w-4xl flex-col gap-8">
+          <div className="pointer-events-none absolute left-6 top-10 hidden h-[calc(100%-4.5rem)] w-[2px] bg-gradient-to-b from-chlorophyll-primary/50 via-chlorophyll-secondary/30 to-transparent md:block"></div>
+
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -34,36 +36,39 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative bg-gray-900/60 p-8 md:p-10 rounded-3xl border border-gray-800 overflow-hidden group shadow-xl"
+              className="group relative overflow-hidden rounded-3xl border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface-high/50 p-7 shadow-[0_18px_50px_rgba(0,0,0,0.26)] backdrop-blur-xl md:p-9"
             >
-              {/* Background glowing effect */}
-              <div className="absolute -left-20 -top-20 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px] pointer-events-none transition-transform duration-700 group-hover:scale-110"></div>
-              
-              <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
-                <div className="flex-shrink-0 p-4 bg-gradient-to-br from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-2xl">
-                  <Briefcase size={40} className="text-blue-400" />
+              <div className="pointer-events-none absolute -left-16 -top-16 h-56 w-56 rounded-full bg-chlorophyll-primary/12 blur-[80px] transition-transform duration-700 group-hover:scale-110"></div>
+
+              <div className="relative z-10 flex flex-col items-start gap-6 md:flex-row">
+                <div className="flex-shrink-0 rounded-2xl border border-chlorophyll-primary/35 bg-chlorophyll-primary-container/20 p-4">
+                  <Briefcase size={34} className="text-chlorophyll-primary" />
                 </div>
-                
+
                 <div className="flex-1 w-full">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                  <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
-                      <h4 className="text-xl text-blue-300 font-medium mb-1">{exp.company}</h4>
+                      <h3 className="mb-2 text-2xl font-bold text-chlorophyll-on-surface">{exp.role}</h3>
+                      <h4 className="text-xl font-medium text-chlorophyll-secondary">{exp.company}</h4>
                     </div>
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-800/80 border border-gray-700 w-fit text-sm text-gray-300 font-medium whitespace-nowrap">
-                      <Calendar size={16} className="text-blue-400" />
+
+                    <div className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-xl border border-chlorophyll-outline-variant/70 bg-chlorophyll-surface px-3 py-1.5 text-sm font-medium text-chlorophyll-on-surface-variant">
+                      <Calendar size={16} className="text-chlorophyll-primary" />
                       {exp.period}
                     </div>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed max-w-2xl mb-6">
+
+                  <p className="mb-6 max-w-2xl leading-relaxed text-chlorophyll-on-surface-variant">
                     {exp.description}
                   </p>
-                  
+
                   {exp.skills.length > 0 && (
                     <div className="flex flex-wrap gap-3">
                       {exp.skills.map((skill, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-gray-800/50 rounded-md text-sm text-gray-400 text-center border border-gray-800/80">
+                        <span
+                          key={idx}
+                          className="rounded-lg border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface px-3 py-1.5 text-center text-sm text-chlorophyll-on-surface-variant"
+                        >
                           {skill}
                         </span>
                       ))}

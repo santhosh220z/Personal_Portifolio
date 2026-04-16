@@ -14,15 +14,14 @@ import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 function App() {
   return (
-    <div className="min-h-screen font-body text-chlorophyll-on-surface">
-      <div className="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none z-50 mix-blend-overlay"></div>
-      <div className="fixed inset-0 bg-grid-white/[0.02] bg-[size:40px_40px] pointer-events-none"></div>
-      <div className="fixed inset-0 bg-gradient-to-br from-chlorophyll-primary-container/5 via-transparent to-chlorophyll-surface pointer-events-none"></div>
-      
+    <div className="relative min-h-screen overflow-x-clip font-body text-chlorophyll-on-surface">
+      <div className="pointer-events-none fixed inset-0 z-[2] bg-grid-white/[0.25] bg-[size:42px_42px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_85%)]"></div>
+      <div className="pointer-events-none fixed inset-0 z-[2] bg-[radial-gradient(circle_at_8%_22%,rgba(175,209,136,0.14),transparent_26%),radial-gradient(circle_at_90%_12%,rgba(217,196,155,0.12),transparent_30%),radial-gradient(circle_at_52%_92%,rgba(122,155,87,0.12),transparent_28%)]"></div>
+
       <div className="relative z-10 w-full overflow-hidden">
         <Navbar />
-        
-        <main>
+
+        <main className="relative">
           <Hero />
           <About />
           <Experience />
@@ -32,7 +31,7 @@ function App() {
           <Certifications />
           <Contact />
         </main>
-        
+
         <Footer />
       </div>
     </div>

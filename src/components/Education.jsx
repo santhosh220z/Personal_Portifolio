@@ -32,11 +32,11 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-24 relative bg-gray-900/20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full flex flex-col items-center">
+    <section id="education" className="relative py-24">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 md:px-12">
         <SectionHeading title="Education" subtitle="Academic Background" />
-        
-        <div className="w-full max-w-3xl flex flex-col gap-8">
+
+        <div className="flex w-full max-w-4xl flex-col gap-8">
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
@@ -44,37 +44,40 @@ const Education = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative bg-gray-900/60 p-8 md:p-10 rounded-3xl border border-gray-800 overflow-hidden group shadow-xl"
+              className="group relative overflow-hidden rounded-3xl border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface-high/55 p-8 shadow-[0_18px_55px_rgba(0,0,0,0.28)] backdrop-blur-xl md:p-10"
             >
-              {/* Background glowing effect */}
-              <div className="absolute -right-20 -top-20 w-64 h-64 bg-purple-600/10 rounded-full blur-[80px] pointer-events-none transition-transform duration-700 group-hover:scale-110"></div>
-              
-              <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
-                <div className="flex-shrink-0 p-4 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-2xl">
-                  {index === 0 ? <GraduationCap size={40} className="text-purple-400" /> : <BookOpen size={40} className="text-purple-400" />}
+              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-chlorophyll-tertiary/14 blur-[80px] transition-transform duration-700 group-hover:scale-110"></div>
+
+              <div className="relative z-10 flex flex-col items-start gap-8 md:flex-row">
+                <div className="flex-shrink-0 rounded-2xl border border-chlorophyll-tertiary/35 bg-chlorophyll-tertiary/12 p-4">
+                  {index === 0 ? <GraduationCap size={34} className="text-chlorophyll-tertiary" /> : <BookOpen size={34} className="text-chlorophyll-tertiary" />}
                 </div>
-                
+
                 <div className="flex-1 w-full">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                  <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">{edu.degree}</h3>
-                      <h4 className="text-xl text-purple-300 font-medium mb-1">{edu.major}</h4>
-                      <p className="text-gray-400 text-sm">{edu.institution}</p>
+                      <h3 className="mb-2 text-2xl font-bold text-chlorophyll-on-surface">{edu.degree}</h3>
+                      <h4 className="mb-1 text-xl font-medium text-chlorophyll-secondary">{edu.major}</h4>
+                      <p className="text-sm text-chlorophyll-on-surface-variant">{edu.institution}</p>
                     </div>
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-800/80 border border-gray-700 w-fit text-sm text-gray-300 font-medium whitespace-nowrap">
-                      <Calendar size={16} className="text-purple-400" />
+
+                    <div className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-xl border border-chlorophyll-outline-variant/70 bg-chlorophyll-surface px-3 py-1.5 text-sm font-medium text-chlorophyll-on-surface-variant">
+                      <Calendar size={16} className="text-chlorophyll-tertiary" />
                       {edu.period}
                     </div>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed max-w-2xl mb-6">
+
+                  <p className="mb-6 max-w-2xl leading-relaxed text-chlorophyll-on-surface-variant">
                     {edu.details}
                   </p>
-                  
+
                   {edu.courses.length > 0 && (
                     <div className="flex flex-wrap gap-3">
                       {edu.courses.map((course, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-gray-800/50 rounded-md text-sm text-gray-400 text-center border border-gray-800/80">
+                        <span
+                          key={idx}
+                          className="rounded-lg border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface px-3 py-1.5 text-center text-sm text-chlorophyll-on-surface-variant"
+                        >
                           {course}
                         </span>
                       ))}
