@@ -22,12 +22,12 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="relative z-10 flex w-full flex-col items-center py-24">
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 md:px-12">
+    <section id="experience" className="relative section-spacing">
+      <div className="relative z-10 section-container">
         <SectionHeading title="Experience" subtitle="Professional Journey" />
 
         <div className="relative flex w-full max-w-4xl flex-col gap-8">
-          <div className="pointer-events-none absolute left-6 top-10 hidden h-[calc(100%-4.5rem)] w-[2px] bg-gradient-to-b from-chlorophyll-primary/50 via-chlorophyll-secondary/30 to-transparent md:block"></div>
+          <div className="pointer-events-none absolute left-6 top-10 hidden h-[calc(100%-4.5rem)] w-[2px] bg-gradient-to-b from-electric-violet/50 via-tertiary/30 to-transparent md:block"></div>
 
           {experiences.map((exp, index) => (
             <motion.div
@@ -36,29 +36,29 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface-high/50 p-7 shadow-[0_18px_50px_rgba(0,0,0,0.26)] backdrop-blur-xl md:p-9"
+              className="group relative overflow-hidden rounded-2xl glass-card-hover p-7 md:p-9"
             >
-              <div className="pointer-events-none absolute -left-16 -top-16 h-56 w-56 rounded-full bg-chlorophyll-primary/12 blur-[80px] transition-transform duration-700 group-hover:scale-110"></div>
+              <div className="pointer-events-none absolute -left-16 -top-16 h-56 w-56 rounded-full bg-electric-violet/10 blur-[80px] transition-transform duration-700 group-hover:scale-110"></div>
 
               <div className="relative z-10 flex flex-col items-start gap-6 md:flex-row">
-                <div className="flex-shrink-0 rounded-2xl border border-chlorophyll-primary/35 bg-chlorophyll-primary-container/20 p-4">
-                  <Briefcase size={34} className="text-chlorophyll-primary" />
+                <div className="flex-shrink-0 rounded-xl border border-electric-violet/30 bg-primary-container/20 p-4">
+                  <Briefcase size={34} className="text-electric-violet" />
                 </div>
 
                 <div className="flex-1 w-full">
                   <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
-                      <h3 className="mb-2 text-2xl font-bold text-chlorophyll-on-surface">{exp.role}</h3>
-                      <h4 className="text-xl font-medium text-chlorophyll-secondary">{exp.company}</h4>
+                      <h3 className="mb-2 font-display headline-sm text-ethereal-on-surface">{exp.role}</h3>
+                      <h4 className="font-display text-lg font-medium text-tertiary">{exp.company}</h4>
                     </div>
 
-                    <div className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-xl border border-chlorophyll-outline-variant/70 bg-chlorophyll-surface px-3 py-1.5 text-sm font-medium text-chlorophyll-on-surface-variant">
-                      <Calendar size={16} className="text-chlorophyll-primary" />
-                      {exp.period}
+                    <div className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-xl glass px-3 py-1.5">
+                      <Calendar size={16} className="text-electric-violet" />
+                      <span className="font-mono label-sm text-ethereal-on-surface-variant">{exp.period}</span>
                     </div>
                   </div>
 
-                  <p className="mb-6 max-w-2xl leading-relaxed text-chlorophyll-on-surface-variant">
+                  <p className="mb-6 max-w-2xl body-lg text-ethereal-on-surface-variant leading-relaxed">
                     {exp.description}
                   </p>
 
@@ -67,7 +67,7 @@ const Experience = () => {
                       {exp.skills.map((skill, idx) => (
                         <span
                           key={idx}
-                          className="rounded-lg border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface px-3 py-1.5 text-center text-sm text-chlorophyll-on-surface-variant"
+                          className="chip"
                         >
                           {skill}
                         </span>

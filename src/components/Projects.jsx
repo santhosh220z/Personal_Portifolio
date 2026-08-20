@@ -36,8 +36,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="relative py-24">
-      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-12">
+    <section id="projects" className="relative section-spacing">
+      <div className="relative z-10 section-container">
         <SectionHeading title="Featured Projects" subtitle="My Work" />
 
         <div className="grid gap-8 pt-8 md:grid-cols-2 md:gap-10">
@@ -48,35 +48,35 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.15, ease: "easeOut" }}
-              className={`group relative flex flex-col overflow-hidden rounded-3xl border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface-high/50 backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-chlorophyll-primary/45 hover:shadow-[0_20px_55px_rgba(0,0,0,0.3)] ${idx % 2 !== 0 ? 'md:mt-14' : ''}`}
+              className={`group relative flex flex-col overflow-hidden rounded-2xl glass-card-hover ${idx % 2 !== 0 ? 'md:mt-14' : ''}`}
             >
-              <div className="h-1.5 w-full bg-gradient-to-r from-chlorophyll-primary via-chlorophyll-secondary to-chlorophyll-tertiary"></div>
+              <div className="h-1.5 w-full bg-gradient-to-r from-electric-violet via-tertiary to-secondary"></div>
               <div className="flex flex-1 flex-col p-8">
                 <div className="mb-8 flex items-start justify-between">
-                  <div className="rounded-2xl border border-chlorophyll-primary/35 bg-chlorophyll-primary-container/20 p-3 text-chlorophyll-primary transition-colors group-hover:bg-chlorophyll-primary-container/35">
+                  <div className="rounded-xl border border-electric-violet/30 bg-primary-container/20 p-3 text-electric-violet transition-colors group-hover:bg-primary-container/30">
                     <Code2 size={24} />
                   </div>
 
-                  <div className="flex items-center gap-3 text-chlorophyll-on-surface-variant">
-                    <span className="rounded-full border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-chlorophyll-secondary">
+                  <div className="flex items-center gap-3 text-ethereal-on-surface-variant">
+                    <span className="chip-primary">
                       {project.impact}
                     </span>
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-lg border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface p-2 transition-colors hover:text-chlorophyll-primary"
+                      className="rounded-lg glass p-2 transition-colors hover:text-electric-violet"
                     >
                       <Github size={22} />
                     </a>
                   </div>
                 </div>
 
-                <h3 className="mb-4 font-display text-2xl font-bold text-chlorophyll-on-surface transition-all group-hover:bg-gradient-to-r group-hover:from-chlorophyll-primary group-hover:to-chlorophyll-tertiary group-hover:bg-clip-text group-hover:text-transparent md:text-3xl">
+                <h3 className="mb-4 font-display headline-sm text-ethereal-on-surface transition-all group-hover:text-gradient md:headline-md">
                   {project.title}
                 </h3>
 
-                <p className="mb-10 flex-1 leading-relaxed text-chlorophyll-on-surface-variant">
+                <p className="mb-10 flex-1 body-lg text-ethereal-on-surface-variant leading-relaxed">
                   {project.description}
                 </p>
 
@@ -85,13 +85,13 @@ const Projects = () => {
                     {project.technologies.map((tech, techIdx) => (
                       <span
                         key={techIdx}
-                        className="rounded-full border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface px-3 py-1 text-xs font-semibold text-chlorophyll-on-surface-variant"
+                        className="chip"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex items-center text-chlorophyll-outline-variant opacity-50 transition-colors group-hover:text-chlorophyll-primary group-hover:opacity-100">
+                  <div className="flex items-center text-ethereal-on-surface-variant/50 transition-colors group-hover:text-electric-violet group-hover:opacity-100">
                     <ExternalLink size={24} />
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Projects = () => {
             href="https://github.com/santhosh220z"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface-high/60 px-8 py-4 font-display font-semibold text-chlorophyll-on-surface transition-all hover:-translate-y-0.5 hover:border-chlorophyll-primary/45 hover:text-chlorophyll-primary"
+            className="btn-secondary inline-flex items-center gap-2"
           >
             View more on GitHub <Github size={18} />
           </a>

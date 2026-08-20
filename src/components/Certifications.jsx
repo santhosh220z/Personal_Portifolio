@@ -117,10 +117,10 @@ const certificationsData = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="relative overflow-hidden py-24">
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[780px] w-[780px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-chlorophyll-primary/7 blur-[140px]"></div>
+    <section id="certifications" className="relative overflow-hidden section-spacing">
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[780px] w-[780px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric-violet/5 blur-[140px]"></div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-12">
+      <div className="relative z-10 section-container">
         <SectionHeading title="Certifications" subtitle="My Google Skill Build Badges" />
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -131,20 +131,20 @@ const Certifications = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: (index % 4) * 0.1 }}
-              className="group relative flex flex-col rounded-2xl border border-chlorophyll-outline-variant/55 bg-chlorophyll-surface-high/55 p-6 shadow-[0_14px_40px_rgba(0,0,0,0.22)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-chlorophyll-primary/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]"
+              className="group relative flex flex-col glass-card-hover"
             >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border border-chlorophyll-outline-variant/60 bg-gradient-to-br from-chlorophyll-surface-high to-chlorophyll-surface p-2 transition-transform duration-300 group-hover:scale-105">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl glass p-2 transition-transform duration-300 group-hover:scale-105">
                 <img src={GoogleCloudLogo} alt="Google Cloud" className="w-full h-full object-contain" />
               </div>
 
               <div className="flex-1 flex flex-col">
-                <h3 className="mb-2 font-display text-lg font-bold leading-tight text-chlorophyll-on-surface transition-colors group-hover:text-chlorophyll-primary">
+                <h3 className="mb-2 font-display headline-sm text-ethereal-on-surface leading-tight transition-colors group-hover:text-electric-violet">
                   {cert.name}
                 </h3>
 
-                <div className="mb-4 flex items-center gap-2 text-sm text-chlorophyll-on-surface-variant">
-                  <span className="font-medium text-chlorophyll-secondary">{cert.issuer}</span>
-                  <span className="h-1 w-1 rounded-full bg-chlorophyll-outline-variant"></span>
+                <div className="mb-4 flex items-center gap-2 font-mono label-sm text-ethereal-on-surface-variant">
+                  <span className="text-tertiary">{cert.issuer}</span>
+                  <span className="h-1 w-1 rounded-full bg-white/15"></span>
                   <span className="flex items-center gap-1">
                     <Calendar size={14} />
                     {cert.date}
@@ -152,15 +152,15 @@ const Certifications = () => {
                 </div>
               </div>
 
-              <div className="mt-auto border-t border-chlorophyll-outline-variant/40 pt-4">
+              <div className="mt-auto border-t border-white/10 pt-4">
                 <a
                   href={cert.verifyLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-chlorophyll-on-surface-variant hover:text-chlorophyll-primary transition-colors group/link"
+                  className="btn-ghost inline-flex items-center gap-2"
                 >
                   Verify Credential
-                  <ExternalLink size={16} className="group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 transition-transform" />
+                  <ExternalLink size={16} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </a>
               </div>
             </motion.div>

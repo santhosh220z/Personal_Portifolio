@@ -32,8 +32,8 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="relative py-24">
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 md:px-12">
+    <section id="education" className="relative section-spacing">
+      <div className="relative z-10 section-container">
         <SectionHeading title="Education" subtitle="Academic Background" />
 
         <div className="flex w-full max-w-4xl flex-col gap-8">
@@ -44,30 +44,30 @@ const Education = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface-high/55 p-8 shadow-[0_18px_55px_rgba(0,0,0,0.28)] backdrop-blur-xl md:p-10"
+              className="group relative overflow-hidden rounded-2xl glass-card-hover p-8 md:p-10"
             >
-              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-chlorophyll-tertiary/14 blur-[80px] transition-transform duration-700 group-hover:scale-110"></div>
+              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-tertiary/10 blur-[80px] transition-transform duration-700 group-hover:scale-110"></div>
 
               <div className="relative z-10 flex flex-col items-start gap-8 md:flex-row">
-                <div className="flex-shrink-0 rounded-2xl border border-chlorophyll-tertiary/35 bg-chlorophyll-tertiary/12 p-4">
-                  {index === 0 ? <GraduationCap size={34} className="text-chlorophyll-tertiary" /> : <BookOpen size={34} className="text-chlorophyll-tertiary" />}
+                <div className="flex-shrink-0 rounded-xl border border-tertiary/30 bg-tertiary-container/20 p-4">
+                  {index === 0 ? <GraduationCap size={34} className="text-tertiary" /> : <BookOpen size={34} className="text-tertiary" />}
                 </div>
 
                 <div className="flex-1 w-full">
                   <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
-                      <h3 className="mb-2 text-2xl font-bold text-chlorophyll-on-surface">{edu.degree}</h3>
-                      <h4 className="mb-1 text-xl font-medium text-chlorophyll-secondary">{edu.major}</h4>
-                      <p className="text-sm text-chlorophyll-on-surface-variant">{edu.institution}</p>
+                      <h3 className="mb-2 font-display headline-sm text-ethereal-on-surface">{edu.degree}</h3>
+                      <h4 className="mb-1 font-display text-lg font-medium text-tertiary">{edu.major}</h4>
+                      <p className="body-md text-ethereal-on-surface-variant">{edu.institution}</p>
                     </div>
 
-                    <div className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-xl border border-chlorophyll-outline-variant/70 bg-chlorophyll-surface px-3 py-1.5 text-sm font-medium text-chlorophyll-on-surface-variant">
-                      <Calendar size={16} className="text-chlorophyll-tertiary" />
-                      {edu.period}
+                    <div className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-xl glass px-3 py-1.5">
+                      <Calendar size={16} className="text-tertiary" />
+                      <span className="font-mono label-sm text-ethereal-on-surface-variant">{edu.period}</span>
                     </div>
                   </div>
 
-                  <p className="mb-6 max-w-2xl leading-relaxed text-chlorophyll-on-surface-variant">
+                  <p className="mb-6 max-w-2xl body-lg text-ethereal-on-surface-variant leading-relaxed">
                     {edu.details}
                   </p>
 
@@ -76,7 +76,7 @@ const Education = () => {
                       {edu.courses.map((course, idx) => (
                         <span
                           key={idx}
-                          className="rounded-lg border border-chlorophyll-outline-variant/60 bg-chlorophyll-surface px-3 py-1.5 text-center text-sm text-chlorophyll-on-surface-variant"
+                          className="chip"
                         >
                           {course}
                         </span>
