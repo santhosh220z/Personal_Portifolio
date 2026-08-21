@@ -6,28 +6,28 @@ import { Brain, Code, Cpu, LineChart } from 'lucide-react';
 const About = () => {
   const features = [
     {
-      icon: <Brain size={22} />,
+      Icon: Brain,
       title: "Deep Learning",
       description: "Building robust neural networks for practical pattern recognition.",
       color: 'text-electric-violet',
       bg: 'bg-primary-container/20 border-primary-container/30'
     },
     {
-      icon: <Cpu size={22} />,
+      Icon: Cpu,
       title: "Computer Vision",
       description: "Designing image and video intelligence pipelines with measurable impact.",
       color: 'text-tertiary',
       bg: 'bg-tertiary-container/20 border-tertiary/30'
     },
     {
-      icon: <LineChart size={22} />,
+      Icon: LineChart,
       title: "Predictive Analytics",
       description: "Transforming datasets into forecasts and decision-ready insights.",
       color: 'text-electric-violet',
       bg: 'bg-secondary-container/20 border-secondary/30'
     },
     {
-      icon: <Code size={22} />,
+      Icon: Code,
       title: "AI Systems",
       description: "Shipping full-stack products with integrated machine learning workflows.",
       color: 'text-tertiary',
@@ -99,7 +99,7 @@ const About = () => {
                 className="group glass-card-hover"
               >
                 <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-xl border transition-transform group-hover:scale-110 ${feature.bg}`}>
-                  <feature.icon className={feature.color} />
+                  <feature.Icon size={22} className={feature.color} />
                 </div>
                 <h4 className="mb-2 font-display headline-sm text-ethereal-on-surface">{feature.title}</h4>
                 <p className="body-md text-ethereal-on-surface-variant leading-relaxed">{feature.description}</p>

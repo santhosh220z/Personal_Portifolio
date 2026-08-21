@@ -44,7 +44,7 @@ const Navbar = () => {
           </motion.div>
           <div>
             <p className="font-display text-base font-semibold text-ethereal-on-surface">Santhosh Sunkara</p>
-            <p className="text-xs tracking-[0.18em] text-ethereal-on-surface-variant font-mono uppercase">FULL STACK DEV</p>
+            <p className="text-xs tracking-[0.18em] text-ethereal-on-surface-variant font-mono uppercase">Machine Learning</p>
           </div>
         </a>
 

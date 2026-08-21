@@ -9,7 +9,7 @@ const Contact = () => {
       label: 'Email',
       value: 'santhoshsunkarasbe@gmail.com',
       href: 'mailto:santhoshsunkarasbe@gmail.com',
-      icon: <Mail size={26} />,
+      Icon: Mail,
       iconColor: 'text-electric-violet',
       iconBg: 'bg-primary-container/20 border-primary-container/30',
     },
@@ -17,7 +17,7 @@ const Contact = () => {
       label: 'LinkedIn',
       value: 'santhosh sunkara',
       href: 'https://www.linkedin.com/in/siva-sambhavi-santhosh-sunkara-588a24265/',
-      icon: <Linkedin size={26} />,
+      Icon: Linkedin,
       iconColor: 'text-tertiary',
       iconBg: 'bg-tertiary-container/20 border-tertiary/30',
     },
@@ -25,7 +25,7 @@ const Contact = () => {
       label: 'GitHub',
       value: '@santhosh220z',
       href: 'https://github.com/santhosh220z',
-      icon: <Github size={26} />,
+      Icon: Github,
       iconColor: 'text-electric-violet',
       iconBg: 'bg-primary-container/20 border-primary-container/30',
     }
@@ -63,7 +63,7 @@ const Contact = () => {
                   className="group flex flex-col items-center gap-4 glass-card-hover text-center"
                 >
                   <div className={`flex h-14 w-14 items-center justify-center rounded-xl border transition-colors ${item.iconBg}`}>
-                    {item.icon && React.cloneElement(item.icon, { className: item.iconColor })}
+                    <item.Icon size={26} className={item.iconColor} />
                   </div>
                   <div>
                     <div className="mb-1 font-mono label-sm text-ethereal-on-surface-variant">{item.label}</div>

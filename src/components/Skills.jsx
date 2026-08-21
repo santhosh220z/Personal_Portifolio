@@ -6,30 +6,30 @@ import { Code2, Cpu, Database, Layout } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "AI & Machine Learning",
-      icon: <Cpu size={22} />,
-      skills: ["Python", "Machine Learning", "Generative AI", "Prompt Engineering", "Deep Learning", "Predictive Analytics"],
+      title: "Machine Learning & AI",
+      Icon: Cpu,
+      skills: ["Python", "Machine Learning", "Deep Learning", "Neural Networks", "NLP", "Prompt Engineering", "Generative AI", "Transfer Learning", "Ensemble Methods"],
       iconColor: 'text-electric-violet',
       iconBg: 'bg-primary-container/20 border-primary-container/30',
     },
     {
       title: "Computer Vision",
-      icon: <Layout size={22} />,
-      skills: ["OpenCV", "MediaPipe", "YOLO", "SSD", "Video Analysis", "Gesture Recognition"],
+      Icon: Layout,
+      skills: ["OpenCV", "MediaPipe", "YOLO", "SSD", "Faster R-CNN", "Mask R-CNN", "Object Detection", "Image Segmentation", "Video Analysis", "Gesture Recognition"],
       iconColor: 'text-tertiary',
       iconBg: 'bg-tertiary-container/20 border-tertiary/30',
     },
     {
-      title: "Tools & Automation",
-      icon: <Code2 size={22} />,
-      skills: ["n8n Workflow Automation", "Git", "GitHub", "VS Code", "Jupyter Notebook"],
+      title: "MLOps & Deployment",
+      Icon: Code2,
+      skills: ["n8n Workflow Automation", "Git", "GitHub Actions", "Docker", "Vertex AI", "API Deployment"],
       iconColor: 'text-electric-violet',
       iconBg: 'bg-primary-container/20 border-primary-container/30',
     },
     {
-      title: "Web Development",
-      icon: <Database size={22} />,
-      skills: ["HTML", "CSS", "Frontend (Intermediate)", "React"],
+      title: "Data Engineering",
+      Icon: Database,
+      skills: ["Pandas", "NumPy", "Data Preprocessing", "Feature Engineering", "SQL", "Stream Processing", "Airflow"],
       iconColor: 'text-tertiary',
       iconBg: 'bg-tertiary-container/20 border-tertiary/30',
     }
@@ -73,7 +73,7 @@ const Skills = () => {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className={`rounded-xl border p-3 ${category.iconBg}`}>
-                  {category.icon && React.cloneElement(category.icon, { className: category.iconColor })}
+                  <category.Icon size={22} className={category.iconColor} />
                 </div>
                 <h3 className="font-display headline-sm text-ethereal-on-surface">{category.title}</h3>
               </div>
