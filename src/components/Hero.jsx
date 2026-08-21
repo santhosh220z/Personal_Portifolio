@@ -61,8 +61,7 @@ const Hero = () => {
             </a>
             <a
               href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
+              download="Santhosh_Sunkara_Resume.pdf"
               className="btn-secondary inline-flex items-center gap-2"
             >
               <Download size={18} />
