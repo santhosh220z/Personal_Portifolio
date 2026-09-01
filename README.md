@@ -1,4 +1,4 @@
-# Santhosh Sunkara — Atelier Zero Portfolio
+# Santhosh Sunkara — portfolio
 
 An editorial, magazine-style personal portfolio built with the **Atelier Zero** visual language — inspired by independent European publications (Monocle, Apartamento, Études Studio). A single self-contained HTML file composed from a typed brief.
 
