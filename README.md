@@ -85,6 +85,4 @@ The `dist/index.html` (or `apps/landing-page/index.html`) is a static file — d
 
 Current deployment: `santhosh_sunkara_portfolio.com` (CNAME in repo root).
 
-## License
 
-MIT — the Atelier Zero system is free to adapt. The portfolio content (inputs.json) is personal to Santhosh Sunkara.
